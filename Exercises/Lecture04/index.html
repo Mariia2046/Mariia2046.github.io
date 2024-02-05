@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 4</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/Exercises/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/Exercises/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/Exercises/favicon-16x16.png">
+<link rel="manifest" href="/Exercises/site.webmanifest">
+<link rel="stylesheet" href="/Exercises/Lecture04/css/main.css">
+</head>
+<body>
+    <section>
+        <h1>Заголовок 1</h1>
+        <h2>Заголовок 2</h2>
+        <h3>Заголовок 3</h3>
+    </section>
+     <main id='main'>
+        <h2 id="heading">Це ше заголовок, але з айді.</h2>
+        <p class="heading">А це параграф з класом</p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium saepe placeat quisquam, eveniet aliquam ipsum amet cupiditate repudiandae obcaecati, impedit aperiam.  
+    </main>
+    <footer>
+        <h2 class="h2">А це заголовок 2 з класом</h2>
+        <p class="heading">Це параграф з класом хедінг</p>
+    </footer>
+    <p class="heading">Ще один параграф, але чогось тут</p>
+    <hr color="pink">
+    <ul>
+  <li>HTML</li>
+  <li>CSS</li>
+ </ul>
+ <hr>
+ <section>
+  <p>Це параграф</p>
+  <div>
+   <p>А це інший параграф</p>
+   <!--Колір тексту в div не зміниться тому, що ми звертались до p який є дочірнім section. А щоб змінився колір в div має бути будова section > div > p (продемонструвала в CSS)-->
+  </div>
+ </section>
+ <hr>
+ <h1>Головний заголовок</h1>
+ <h2>Заголовок другий</h2>
+ <h2>Заголовок другий версія 2.0</h2>
+ <hr>
+ <p class="first">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        <a href="#">Accusantium</a> saepe placeat quisquam, eveniet aliquam ipsum amet cupiditate repudiandae obcaecati, 
+        <span class="first">
+        <a href="#">Accusantium</a> impedit aperiam. Expedita, nobis odit. Dolor eius aut quisquam laboriosam recusandae?
+        </span>
+    </p>
+    <hr>
+ 
+ <p>I'm sibling paragraph of div.</p>
+  <div>
+ <p>This is a paragraph inside a div.</p>
+ <p>This is another paragraph inside a div.</p>
+  </div>
+ <p>I'm sibling paragraph of div.</p>
+ <h6>I'm sibling heading of div.</h6>
+ <p>I'm sibling paragraph of div.</p>
+<hr>
+<p><strong>Відповідь на питання про кольори:</strong></p>
+<h2>Шістнадцятковий код:</h2>
+<ul>
+  <li>чорний: #000000</li>
+  <li>синій: #0000FF</li>
+  <li>зелений: #008000</li>
+  <li>червоний: #FF0000</li>
+  <li>білий: #FFFFFF</li>
+  <li>жовтий: #FFFF00</li>
+</ul>
+<h2>RGB</h2>
+<ul>
+  <li>чорний: rgb(0, 0, 0)</li>
+  <li>синій: rgb(0, 0, 255)</li>
+  <li>зелений: rgb(0, 128, 0)</li>
+  <li>червоний: rgb(255, 0, 0)</li>
+  <li>білий: rgb(255, 255, 255)</li>
+  <li>жовтий: rgb(255, 255, 0)</li>
+</ul>
+<h2>Відсоткове представлення:</h2>
+<ul>
+  <li>чорний: rgb(0%, 0%, 0%)</li>
+  <li>синій: rgb(0%, 0%, 100%)</li>
+  <li>зелений: rgb(0%, 50%, 0%)</li>
+  <li>червоний: rgb(100%, 0%, 0%)</li>
+  <li>білий: rgb(100%, 100%, 100%)</li>
+  <li>жовтий: rgb(100%, 100%, 0%)</li>
+</ul>
+<h2>Використання альфа-каналу (задання прозорості):</h2>
+<p>Для всіх кольорів я можу додати альфа-канал у форматі rgba, де альфа варіюється від 0 (повна прозорість) до 1 (повна непрозорість).
+Наприклад, якщо я хочу зробити колір чорний з прозорістю 50%, я можу використати rgba(0, 0, 0, 0.5).</p>
+<hr>
+<section>
+  <div class="translucent-box"></div>
+ </section>
+ <h3>Остання задача</h3>
+ <p>root=100%, body успадковує root, який + 40%.Отже body=140%. А h1 успадковує root, який + 140%. Отже h1=240%</p>
+</body>
+</html>
