@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--додати сюда фавікон з ексесайс-->
+<link rel="apple-touch-icon" sizes="180x180" href="/Exercises/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/Exercises/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/Exercises/favicon-16x16.png">
+<link rel="manifest" href="/Exercises/site.webmanifest">
+    <title>Lesson 3 Chalenges</title>
+    <style>
+        p {color: darkred;
+          }
+    </style>
+     <style type="text/css">
+     
+        body {
+        background: var(--bgColor);
+        }
+
+        div {
+        --bgColor: limegreen;
+        }
+        .p{background: var(--bgColor);
+
+        }
+        </style>
+</head>
+<body>
+<h2>Сторінка Вікіпедії для мови CSS</h2>
+<iframe id="wiki" title="Сторінка Вікіпедії для мови CSS" src="https://uk.wikipedia.org/wiki/CSS"></iframe> 
+<hr> 
+<p style="color: blue;">This is my paragraph</p>  
+<p>Я спочатку елемент p стилізувала червоним кольором у зовнішньому стилі, але потім використала стиль (атрибут style) для тегу p, і колір змінився на синій. Атрибут переміг, бо зовнішнього файлу CSS немає.</p>
+<hr>
+<p>Звичайний, нудний абзац. Намагайтеся не заснути.</p>
+<p id="exciting-paragraph">The most exciting paragraph on the page. One of a kind!</p>
+
+<div id="exciting-div">The most exciting paragraph on the page. One of a kind!</div>
+
+<style>
+    #exciting-paragraph{
+        background: #3c77f6;
+        border: 1px solid #696969;
+        padding: 10px;
+    }
+    #exciting-div{
+      background: #ffff18;
+      border: 1px solid #696969;
+      padding: 10px;  
+    }
+</style>
+<hr>
+ <div>
+    <h3>Div 1</h3>
+    <p>Paragraph 1</p>
+ </div>
+
+<div>
+    <h3>Div 2</h3>
+    <p>Paragraph 2</p>
+    <p>Відповідь на питання: змінна --bgColor встановлена лише для елементів div, а не для елемента body. Тому її не буде видно для елемента body. Фон елемента body залишиться незмінним, бо до нього не заданий бекграунд колор</p>
+</div>
+</body>
+</html>
