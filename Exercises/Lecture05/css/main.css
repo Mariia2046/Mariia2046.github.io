@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/*Вирішення задачі 2
+   div {
+    font-size=(25.6px + 40.96px) / 16px=4,16em
+   }/* 

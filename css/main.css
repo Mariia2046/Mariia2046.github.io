@@ -1,11 +1,8 @@
 @import url(css/common.css);
-/*@import url(css/common.css); завжди пишеться з самого верху, перед роботою зі стилями.
-/* Reset styles */
 * {
     margin: 10;
     padding: 10;
   }
-  /* Встановлення стилів для елемента body */
   body {
       color: var(--primary-text-color);
       background: var(--primary-bg-color);

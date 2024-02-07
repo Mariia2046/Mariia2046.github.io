@@ -1,8 +1,8 @@
 :root {
-    --primary-text-color: #233c09;
-    --primary-bg-color: #d9b21447;}
+    --primary-text-color: #000;
+    --primary-bg-color: #f1f1f1;}
 
 footer {
-    --footer-text-color: #ffffff;
-    --footer-bg-color: #000;
-}
+    --footer-text-color: #000;
+    --primary-bg-color:#F1F1F1;
+    }
