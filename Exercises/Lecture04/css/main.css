@@ -27,27 +27,17 @@ h2:first-of-type {
     color: indigo;
  }
 /*Тут  виправила*/
- p.first > a { 
+ p.first a {
     color: green;
  }
- p.first > span.first > a {
-    color: darkgreen;
- }
 /*Тут виправила*/
- p.first > a{
-    color: rgb(0, 12, 100);
- }
- span.first > a {
-    color: aqua;
- }
+p .first a {
+    color: green;
+}
 /*Тут виправила*/
- div + p {
-     color: salmon;
- }
- h6 + p{
+ div ~ p{
     color: salmon;
  }
-
 .translucent-box {
     background-color: hsl(0, 100%, 50%, 0.5);
     width: 200px;
