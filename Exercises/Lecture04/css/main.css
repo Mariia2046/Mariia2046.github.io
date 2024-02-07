@@ -26,18 +26,30 @@ ul > li{
 h2:first-of-type {
     color: indigo;
  }
+/*Тут  виправила*/
  p.first > a { 
     color: green;
  }
- p > span > a{
+ p.first > span.first > a {
     color: darkgreen;
  }
-
+/*Тут виправила*/
+ p.first > a{
+    color: rgb(0, 12, 100);
+ }
+ span.first > a {
+    color: aqua;
+ }
+/*Тут виправила*/
  div + p {
      color: salmon;
  }
+ h6 + p{
+    color: salmon;
+ }
+
 .translucent-box {
-    background-color: hsla(0, 100%, 50%, 0.5);
+    background-color: hsl(0, 100%, 50%, 0.5);
     width: 200px;
     height: 200px;
 }
