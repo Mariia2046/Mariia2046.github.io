@@ -2,7 +2,23 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
-/*Вирішення задачі 2
+
+/*Вирішення задачі 3
    div {
-    font-size=(25.6px + 40.96px) / 16px=4,16em
-   }/* 
+    font-size=(25.6px + 40.96px) / 16px = 4.16em
+    {
+   span (Outer) = div (тому, що div преддок div)
+
+   span (inner) {
+    66.56px / 40.96px = 1.6em
+    {*/
+    
+           /*Задача 4*/
+     /* 25.6px / 16px = 1.6em */
+        strong {
+            font-size: 1.6em;
+          
+        }
+        ul {
+            list-style-type: square;
+        }

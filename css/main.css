@@ -3,7 +3,22 @@
     margin: 10;
     padding: 10;
   }
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;1,400&display=swap');
   body {
       color: var(--primary-text-color);
       background: var(--primary-bg-color);
+      font-family: 'Fira Sans', sans-serif;
+      font-size: 0.875rem;}
+  h1, h2{
+    font-weight: 700;
+  }
+        
+  h1 {
+    font-size: 1.45rem;
+  }
+  h2{
+    font-size: 1.3rem;
+  }
+  .list-unstyled {
+    list-style: none;
   }
