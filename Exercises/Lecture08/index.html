@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 8</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/Exercises/exercises.favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/Exercises/exercises.favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/Exercises/exercises.favicon/favicon-16x16.png">
+<link rel="manifest" href="/Exercises/exercises.favicon/site.webmanifest">
+<link rel="stylesheet" href="/Exercises/Lecture08/css/main.css">
+	<style>
+.box{ 
+ padding-top:    10px; 
+ padding-right:  20px; 
+ padding-bottom: 25px; 
+ padding-left:   20px;  
+
+ margin-top:    25px; 
+ margin-right:  20px; 
+ margin-bottom: 25px; 
+ margin-left:   20px;
+}
+
+.box{ 
+  width: 300px; 
+  padding: 10px; 
+  border: dashed 2px green;
+}
+.first-box {
+  width: 200px;
+  height: 100px;
+  border: 8px solid blue;
+  padding: 20px;
+  background: yellow;
+  
+}
+.second-box {
+  width: 200px;
+  height: 100px;
+  border: 8px solid blue;
+  background: yellow;
+}
+div {
+  box-sizing:content-box;
+  width: 200px;
+  border: 8px solid blue;
+  padding: 20px;
+  background: yellow;
+}
+  div {
+    border: 10px dotted black;
+    padding: 15px;
+    background: lightblue;
+  }
+
+   /* 1 завдання - Скорочено    
+   .box {
+    padding: 10px 20px 25px;
+    margin: 25px 20px;
+   }*/
+   
+   /* 2 завдання - обчислити ширину 
+   Ширина .box - 300px+20px+4px=324px*/
+   
+   /* 3 завдання - обчислити ширину і висоту .first-box
+   Ширина .first-box - 200px+20px+20px+8px+8px = 256px
+   Висота .first-box - 100px+20px+20px+8px+8px = 156px*/
+   
+   /* 4 завдання - обчислити ширину і висоту .second-box
+   Через те, що не вказана властивість padding ширина і висота будуть такі, як вказано в коді
+   Ширина - 200рх
+   Висота - 100рх*/
+
+   /* 5 завдання - обчислити ширину елемента div
+   Ширина div - 200px+20px+20px+8px+8px = 256px*/
+  
+  /* 6 завдання - обчислити ширину контенту елемента div
+  Ми встановили box-sizing: border-box;, тому ширина елемента вже включає в себе ширину контенту, padding та border
+  Отже, у нашому випадку ширина контенту елемента div буде 200 пікселів, оскільки ми встановили ширину width: 200px;
+  border та padding не враховуються окремо, а включаються в ширину елемента завдяки властивості box-sizing: border-box;*/
+
+  /*7 завдання*/
+
+  #example1 {
+    background-clip: border-box;
+  }
+  #example2 {
+    background-clip: padding-box;
+  }
+  #example3 {
+    background-clip: content-box;
+  }
+  /*8 завдання*/
+h1 {
+    width: 100%;
+  } 
+
+h1 span {
+    display: inline-block;
+    word-wrap: break-word;
+  }
+</style>
+</head>
+<body>
+<h2>Домашня робота 8</h2>
+<div class="box"></div>
+<div class="first-box"></div>
+<div class="second-box"></div>
+<div id="example1">
+    <p>Правило для example1: фон всередині елемента має простягатися за межі рамки.</p>
+</div>
+
+<div id="example2">
+    <p>Правило для example2: фон всередині елемента має простягатися до внутрішнього краю рамки.</p>
+</div>
+
+<div id="example3">
+    <p>Правило для example3: фон всередині елемента має простягатися до краю поля вмісту.</p>
+</div>
+<h1><span>Awesome article</span></h1>
+</html>
