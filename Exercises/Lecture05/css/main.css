@@ -3,15 +3,13 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/*Вирішення задачі 3
-   div {
-    font-size=(25.6px + 40.96px) / 16px = 4.16em
-    {
-   span (Outer) = div (тому, що div преддок div)
-
-   span (inner) {
-    66.56px / 40.96px = 1.6em
-    {*/
+         /*Вирішення задачі 3
+  Outer: 25,6=16*X*Y
+  X*Y=1.6
+  Inner: 40,96=16*X*Y*Y
+  X*Y*Y=1.6*1.6
+  Y=1.6
+  X=1*/
     
            /*Задача 4*/
      /* 25.6px / 16px = 1.6em */
