@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>Hello, javascript!</h1>
+
+    <script>
+        var message1 = "Hello";
+        var message2 = " JavaScript";
+        alert(message1 + message2 + "!");
+    </script>
+
+    <script>
+        'use strict';
+        
+        var message;
+        
+        message = 'hello';
+        console.log(message);
+        
+        message = 123456;
+        console.log(message);
+    </script>
+
+    <script>
+        var x = prompt('8');
+        var y = prompt('9');
+
+        x = parseFloat(x);
+        y = parseFloat(y);
+
+         var sum = x + y;
+        alert('17'+ sum);
+    </script>
+
+    <script>
+    'use strict';
+
+    let a = 9007199254740991;
+    let b = 9007199254740991n;
+    console.log(BigInt(a) + b); 
+    </script>
+
+    <script>
+    'use strict';
+
+    let apples = "2";
+    let oranges = "3";
+
+    alert( Number(apples) + Number(oranges) ); 
+    </script>
+
+    <script>
+    'use strict';
+
+    //let a = 1, b = 1;
+    let c = ++a; // ?
+    let d = b++; // ?
+    
+    //a = 2 b = 2 c = 2 d = 1
+    </script>
+
+    <script>
+    'use strict';
+
+    //let a = 2;
+    let x = 1 + (a *= 2);
+   
+    // a = 4 x = 5
+    </script>
+
+    <script>
+    'use strict';
+
+    "" + 1 + 0 //10
+    "" - 1 + 0 //-1
+    true + false//1
+    6 / "3"//2
+    "2" * "3"//6
+    4 + 5 + "px"//9px
+    "$" + 4 + 5//$45
+    "4" - 2//2
+    "4px" - 2//NaN
+    "  -9  " + 5//-9 5
+    "  -9  " - 5//-14
+    null + 1//1
+    undefined + 1//NaN
+    NaN + 1//NaN
+  </script>
+
+  <script>
+    'use strict';
+    let n = 2;
+    n += 5;
+    n *= 2;
+  </script>
+
+  <script>
+    let n1 = "   123   ";
+    let n2 = "123z";
+    let n3 = true;
+    let n4 = false;
+    
+
+    n1 = parseInt(n1.trim());
+    n2 = parseInt(n2);
+    
+
+    n3 = Number(n3);
+    n4 = Number(n4);
+    
+    console.log(n1, n2, n3, n4);
+  </script>
+
+    
+
+
+</body>
+</html>
