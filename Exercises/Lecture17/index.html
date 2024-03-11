@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	
+</head>
+<body>
+   
+  <script>
+
+  let x = 3
+  let y = 4
+
+  x == 3 //true
+  x === "3"//false
+  x!=5//true
+  x!== "5"//true
+  X!== 3//error
+  y > 5//false
+  y >= 3//true
+  y < 5//true
+  y <= 2//false
+  1 == true//true
+  null == undefined//true
+  NaN == NaN//false
+
+  </script>
+
+  <script>
+
+//let x = 3;
+//let y = 4;
+let z = 5;
+
+x ||= y;//x = x || y
+x || (y = z);//x або (y = z)
+x &&= y;//x = x && y
+x && (y = z);//x і (y = z)
+x ??= y;//x = x ?? y
+x ?? (y = z);//x або (y = z)
+
+  </script>
+
+<script>
+
+const secretNumber = 3;
+
+
+let guess = prompt("Вгадайте число (від 1 до 5):");
+
+
+if (guess == secretNumber) {
+    alert("Congratulations, You did it!");
+} else if (guess > secretNumber) {
+    alert("The number is too long");
+} else if (guess < secretNumber) {
+    alert("The number is short");
+} else {
+    alert("Invalid input");
+}
+
+</script>
+
+<script>
+
+let day = prompt("Введіть назву дня тижня:");
+
+day = day.toLowerCase();
+
+switch (day) {
+    case "понеділок":
+    case "monday":
+        alert("Початок робочого тижня!");
+        break;
+    case "п'ятниця":
+    case "friday":
+        alert("Кінець робочого тижня!");
+        break;
+    default:
+        alert("Звичайний день");
+}
+
+</script>
+
+<!-- if else
+let day = prompt("Введіть назву дня тижня:");
+
+day = day.toLowerCase();
+
+if (day === "понеділок" || day === "monday") {
+    alert("Початок робочого тижня!");
+} else if (day === "п'ятниця" || day === "friday") {
+    alert("Кінець робочого тижня!");
+} else {
+    alert("Звичайний день");
+}!-->
+
+<script>
+
+let score =75;
+
+let grade;
+
+if (score < 50) {
+    grade = 'F';
+} else if (score < 70) {
+    grade = 'D';
+} else if (score < 80) {
+    grade = 'C';
+} else if (score < 90) {
+    grade = 'B';
+} else {
+    grade = 'A';
+}
+
+console.log("Ступінь студента:", grade);
+
+</script>
+
+<!--Тернарний оператор
+    
+    let score =75;
+
+let grade = 
+    score < 50 ? 'F' :
+    score < 70 ? 'D' :
+    score < 80 ? 'C' :
+    score < 90 ? 'B' :
+    'A';
+
+console.log("Ступінь студента:", grade);-->
+
+<script>
+
+let firstName = null;
+let lastName = undefined;
+let username = firstName ?? lastName ?? "Guest";
+
+console.log(username); // "Guest"
+
+</script>
+
+</body>
+</html>
