@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	
+</head>
+<body>
+
+  - функція checkAge повертає true, якщо параметр age перевищує 18.
+  - в іншому випадку запитує підтвердження та повертає результат:
+    
+    <script>
+    function checkAge(age) {
+      if (age > 18) {
+        return true;
+      }
+        // ...так, функція буде працювати
+        return confirm('Did parents allow you?');
+      }
+      //обидва варіанти дають однаковий результат, без else код коротший
+    </script>
+
+    <script>
+        function checkAge(age) {
+  if (age > 18) {
+    return true;
+  } else {
+    return confirm('Did parents allow you?');
+  }
+}
+
+/* ФУНКЦІЯ З ВИКОРИСТАННЯМ ?
+function checkAge(age) {
+  return (age > 18) ? true : confirm('Did parents allow you?');
+}
+
+   ФУНКЦІЯ З ВИКОРИСТАННЯМ ||
+function checkAge(age) {
+  return (age > 18) || confirm('Did parents allow you?');
+}
+Присутність дужок покращує читабельність коду, але не обов'язкові
+*/
+    </script>
+
+<script>
+min(2, 5) == 2
+min(3, -1) == -1
+min(1, 1) == 1
+
+function min(a, b) {
+  if (a < b) {
+    return a;
+  } else if (b < a) {
+    return b;
+  } else {
+    return undefined;
+  }
+}
+
+function min(a, b) {
+  return a < b ? a : (b < a ? b : undefined);
+}
+</script>
+
+<script>
+    function pow(x, n) {
+  if (n === 1) {
+    return x;
+  } else {
+    return x * pow(x, n - 1);
+  }
+}
+</script>
+
+<script>
+    function pow(x, n) {
+  if (n === 1) {
+    return x;
+  } else if (n > 1) {
+    return x * pow(x, n - 1);
+  } else {
+    return "Параметр n повинен бути натуральним числом (більше або рівним 1).";
+  }
+}
+
+let x = parseFloat(prompt("Введіть значення x:"));
+let n = parseInt(prompt("Введіть значення n:"));
+
+if (!isNaN(x) && !isNaN(n)) {
+  console.log("Результат:", pow(x, n));
+} else {
+  console.log("Введені значення не є числами.");
+}
+</script>
+
+<script>
+     //6
+    // Оголошення функції ask
+function ask(question, yes, no) {
+  if (confirm(question)) yes();
+  else no();
+}
+
+// Оголошення стрілкових функцій для передачі в якості аргументів
+let yesFunction = () => console.log('Ви погодилися.');
+let noFunction = () => console.log('Ви відмовилися.');
+
+// Виклик функції ask з використанням стрілкових функцій
+ask("Згодні?", yesFunction, noFunction);
+</script>
+
+<script>
+    //7
+   // Оголошення функції ask
+function ask(question, yes, no) {
+  if (confirm(question)) yes();
+  else no();
+}
+
+// Функціональні вирази для передачі в якості аргументів
+let yesFunction = function() {
+  console.log('Ви погодилися.');
+};
+
+let noFunction = function() {
+  console.log('Ви відмовилися.');
+};
+
+// Виклик функції ask з використанням функціональних виразів
+ask("Згодні?", yesFunction, noFunction);
+</script>
+
+<script>
+    //8.1
+    A(); // Виведе: A was called
+    C(); // Виведе: C was called
+    
+    //8.2
+    B(); // Виведе: B was called
+    C(); // Виведе: C was called
+</script>
+
+</body>
+</html>
